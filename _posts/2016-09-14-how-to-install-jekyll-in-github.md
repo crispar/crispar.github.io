@@ -11,7 +11,7 @@ GITHUB에 Jekyll 블로그 사이트를 개설 했다. 먼가 하고 싶은 것�
 
 오늘은 Jekyll 블로그 개설에 대한 내용을 추가할려고 한다.
 
-**설치해야하는 프로그램**
+## **설치해야하는 프로그램**
 
 기본적으로 [Jekyll 한글 사이트](https://jekyllrb-ko.github.io)에 가면 아래와 같은 내용들이 나온다.
  - [Ruby](http://www.ruby-lang.org/en/downloads/) ( Jekyll 2 사용시 v1.9.3 이상,  Jekyll3 사용시 v2이상의 패키지 포함)
