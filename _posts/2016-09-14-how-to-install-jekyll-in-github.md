@@ -55,7 +55,6 @@ GITHUB에 Jekyll 블로그 사이트를 개설 했다. 먼가 하고 싶은 것�
 >jekyll 3.1.6
 ```
 >**Bonus steps**
->
 >If you’re using pagination:
 ```bash
 >sudo gem install jekyll-paginate
@@ -79,7 +78,8 @@ jekyll serve
 >
 >`jekyll 3.2.1 | Error:  Invalid argument - Failed to watch "/home/ubuntu/my_git_jekyll/.git/branches": the given event mask contains no legal events; or fd is not an inotify file descriptor.` 
 >
->구글에서 해당 에러로 찾아보니, 다음 페이지에 [https://github.com/jekyll/jekyll/issues/5233](https://github.com/jekyll/jekyll/issues/5233) 명령를 실행시에 아래와 같이 실행하면 된다고한다.
+>구글에서 해당 에러로 찾아보니, 다음 페이지에
+[https://github.com/jekyll/jekyll/issues/5233](https://github.com/jekyll/jekyll/issues/5233) 명령를 실행시에 아래와 같이 실행하면 된다고한다.
 >
 >`jekyll serve --force_polling`
 >
