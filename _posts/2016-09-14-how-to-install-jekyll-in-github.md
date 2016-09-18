@@ -75,6 +75,7 @@ alias jek='jekyll serve --force_polling --incremental'
 > 해당 내용을 실행하고 나니 정상적으로 루비 버젼이 설치가되고 Gem command의 실행이 가능했다. 
 
 모든 프로그램이 설치가 된 후 jekyll blog의 기본 페이지 생성을 위해 아래 명령을 실행한다.
+
 ```bash
 jekyll new 폴더명 --force
 ```
