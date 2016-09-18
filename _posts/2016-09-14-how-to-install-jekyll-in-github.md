@@ -35,7 +35,7 @@ GITHUB에 Jekyll 블로그 사이트를 개설 했다. 먼가 하고 싶은 것�
 >sudo apt-get install ruby2.3 ruby2.3-dev
 ```
 >Verify the install by running ruby -v
->You should get something similar to 
+>You should get something similar to
 >
 ```bash
 >ruby 2.3.1p112 (2016-04-26 revision 54768)
