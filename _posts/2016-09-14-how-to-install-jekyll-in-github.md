@@ -30,47 +30,57 @@ GITHUB에 Jekyll 블로그 사이트를 개설 했다. 먼가 하고 싶은 것�
 >sudo apt-get update
 ```
 >**Step 1: Install ruby 2.3 and -dev package**
+>
 ```bash
 >sudo apt-get install ruby2.3 ruby2.3-dev
 ```
 >Verify the install by running ruby -v
 >You should get something similar to 
+>
 ```bash
 >ruby 2.3.1p112 (2016-04-26 revision 54768)
 ```
 >**Step 2: update ruby gems**
+>
 ```bash
 >sudo gem update --system
 ```
 >**Step 3: install build-essential**
+>
 ```bash
 >sudo apt-get install build-essential --no-install-recommends
 ```
 >**Step 4: install jekyll itself**
+>
 ```bash
 >sudo gem install jekyll
 ```
 >Verify the install by running jekyll -v
 >You should get something similar to
+>
 ```bash
 >jekyll 3.1.6
 ```
 >**Bonus steps**
 >If you’re using pagination:
+>
 ```bash
 >sudo gem install jekyll-paginate
 ```
 >To save yourself some typing add the following to your .bashrc
+>
 ```bash
 alias jek='jekyll serve --force_polling --incremental'
 ```
 > 해당 내용을 실행하고 나니 정상적으로 루비 버젼이 설치가되고 Gem command의 실행이 가능했다. 
 
 모든 프로그램이 설치가 된 후 jekyll blog의 기본 페이지 생성을 위해 아래 명령을 실행한다.
+>
 ```bash
 jekyll new 폴더명 --force
 ```
 그리고 해당 페이지 서비스의 내부 확인을 위한 구동을 위해 하기 명령을 수행한다.
+>
 ```bash
 jekyll serve
 ```
