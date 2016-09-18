@@ -89,7 +89,8 @@ jekyll serve
 
 `http://localhost:4000`
 
-해당 동작이 마무리 되면, github에 해당 코드를 올려야한다. 설정된 파일들이 생성된 폴더에서 
+해당 동작이 마무리 되면, github에 해당 코드를 올려야한다. 설정된 파일들이 생성된 폴더에서
+
 ```bash
 git init
 git remote add <repository name> <repository url>
