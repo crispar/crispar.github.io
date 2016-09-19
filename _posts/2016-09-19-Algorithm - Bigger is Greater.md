@@ -63,7 +63,7 @@ tags:
 
 **Answer**
 
-```cpp
+```{.cpp}
 #include <stdio.h>  
 #include <string.h>  
 #include <math.h>  
