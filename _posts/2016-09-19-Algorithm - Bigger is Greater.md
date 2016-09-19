@@ -45,16 +45,21 @@ tags:
 >```  
 >
 >**Explanation**  
->* Test case 1:  
+>
+>+ Test case 1:  
+>
 >There exists only one string greater than `ab` which can be built by rearranging `ab`. That is `ba`.
->* Test case 2:
+>+ Test case 2:
 >Not possible to rearrange `bb` and get a lexicographically greater string.
->* Test case 3: 
-`hegf` is the next string lexicographically greater than `hefg`.
->* Test case 4: 
-`dhkc` is the next string lexicographically greater than `dhck`.
->* Test case 5: 
-`hcdk` is the next string lexicographically greater than `dkhc`.
+>
+>+ Test case 3: 
+>`hegf` is the next string lexicographically greater than `hefg`.
+>
+>+ Test case 4: 
+>`dhkc` is the next string lexicographically greater than `dhck`.
+>
+>+ Test case 5: 
+>`hcdk` is the next string lexicographically greater than `dkhc`.
 
 **Answer**  
 ```cpp  
