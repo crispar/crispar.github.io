@@ -12,12 +12,12 @@ tags:
 >Given a word _w_, rearrange the letters of  _w_ to construct another word _s_ in such a way that _s_ is lexicographically greater than _w_. In case of multiple possible answers, find the lexicographically smallest one among them.  
 >
 >**Input Format**  
->$$$  
+>$$  
 >1 <= t <= 10^5  
->$$$  
->$$$  
+>$$  
+>$$  
 >1 <= |w| <= 100  
->$$$  
+>$$  
 > _w_ will contain only lower-case English letters and its length will not exceed _100_.  
 >
 >**Output Format**  
@@ -49,6 +49,7 @@ tags:
 >+ Test case 1:  
 >
 >There exists only one string greater than `ab` which can be built by rearranging `ab`. That is `ba`.
+>
 >+ Test case 2:
 >Not possible to rearrange `bb` and get a lexicographically greater string.
 >
