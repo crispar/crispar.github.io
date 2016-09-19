@@ -61,8 +61,9 @@ tags:
 >+ Test case 5: 
 >`hcdk` is the next string lexicographically greater than `dkhc`.
 
-**Answer**  
-```cpp  
+**Answer**
+
+```cpp
 #include <stdio.h>  
 #include <string.h>  
 #include <math.h>  
@@ -120,7 +121,8 @@ int next_permutation(char *array, int length) {
 	}  
 	return 1;  
 }  
-```  
+```
+
 참고. [Project Nayuki](https://www.nayuki.io/page/next-lexicographical-permutation-algorithm)
 
 
