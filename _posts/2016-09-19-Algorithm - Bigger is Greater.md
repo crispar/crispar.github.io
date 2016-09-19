@@ -24,6 +24,7 @@ tags:
 >For each testcase, output a string lexicographically bigger than  in a separate line. In case of multiple possible answers, print the lexicographically smallest one, and if no answer exists, print `no answer`.  
 >  
 >**Sample Input**  
+>
 >```bash  
 >5  
 >ab  
@@ -32,7 +33,9 @@ tags:
 >dhck  
 >dkhc  
 >```  
->**Sample Output**  
+>
+>**Sample Output**
+>
 >```bash  
 >ba  
 >no answer  
@@ -40,6 +43,7 @@ tags:
 >dhkc  
 >hcdk  
 >```  
+>
 >**Explanation**  
 >* Test case 1:  
 >There exists only one string greater than `ab` which can be built by rearranging `ab`. That is `ba`.
