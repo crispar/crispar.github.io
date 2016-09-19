@@ -13,9 +13,9 @@ tags:
 >
 >**Input Format**  
 >
->$$1 <= t <= 10^5$$  
+$$1 <= t <= 10^5$$  
 >
->$$1 <= |w| <= 100$$
+$$1 <= |w| <= 100$$
 >
 > _w_ will contain only lower-case English letters and its length will not exceed _100_.  
 >
