@@ -18,5 +18,5 @@ I try to run more things like server side technology. Example of
 + Docker
 + etc
 
-<img title="jungwook" src="images/20120901_100431.jpg" alt="My Picture" width="580" height="668" />
+<img title="jungwook" src="crispar.github.io/images/20120901_100431.jpg " alt="My Picture" width="580" height="668" />
 
