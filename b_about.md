@@ -5,23 +5,18 @@ comments: yes
 permalink: /about/
 ---
 
+Hi, My name is jungwook Park. 
 
-### Freshman21 is a Jekyll theme.
+I have worked as mobile software developer for 10 years now. I currently work for cloud infra team now and manage server infra and services.
 
-A tribute to Twenty Twelve and Twenty eleven.
+I try to learn more things like server side technology. Example of
 
-I like wordpress's theme Twenty Twelve and Twenty eleven very much. 
-So I called my Jekyll theme Freshman21 (Freshman <q>twenty-first</q> , it means twenty-first century, not twenty-one), this theme is based on my former theme [Freshman](https://github.com/yulijia/freshman/).
++ Python
++ Javascript
++ AWS
++ Google Cloude Platform
++ Docker
++ etc
 
-Freshman21 have two main page format, one is [single column](http://yulijia.net/en/  "see demo"), the other is two columns. For more details, please see the articles on the site.
-
-<cite>Proudly enjoy using Freshman21 theme.</cite> <code>;)</code>
-
-<img title="麋鹿" src="https://i.imgur.com/Mdc4szJl.jpg" alt="麋鹿" width="580" height="668" />
-
-#### Hi, the picture you have seen in the sample-page is a Père David's deer photoed by my friend at Beijing Milu Park, China.
-
-Milu(麋鹿) is the chinese name of Père David's deer.
-
-
+<img title="jungwook" src="https://crispar.github.io/images/20120901_100431.jpg" alt="My Picture" width="580" height="668" />
 
