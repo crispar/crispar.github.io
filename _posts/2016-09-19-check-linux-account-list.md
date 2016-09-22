@@ -1,3 +1,4 @@
+---
 shed: true
 title: How to check linux account lists
 layout: post
@@ -21,9 +22,13 @@ tags:
 1. <a href="#comment">주석</a>
 
 ## <a name='AllList'>전체 목록</a>
+
 **명령어**
+
+>```bash
 >cat /etc/passwd
 >cat -f1 -d: /etc/passwd
+>```
 
 **예시**
 
@@ -56,15 +61,20 @@ tags:
 >jekyll
 >jekyll@ip-192-168-0-7:~$ 
 >```
+
 ## <a name='bashuser'>bash 사용자 목록</a>
 
 useradd로 계정을 만들면 기본적으로 /bin/bash 환경이 적용된다. bash 사용자 목록이 의미가 있는 경우가 많다.
 
 **명령어**
+
+>```bash
 >grep /bin/bash /etc/passwd
 >grep /bin/bash /etc/passwd | cut -f1 -d:
+>```
 
 **예시**
+
 >```bash
 >jekyll@ip-192-168-0-7:~$ grep /bin/bash /etc/passwd
 >root:x:0:0:root:/root:/bin/bash
@@ -73,5 +83,6 @@ useradd로 계정을 만들면 기본적으로 /bin/bash 환경이 적용된다.
 >jekyll:x:1002:1002::/home/jekyll:/bin/bash
 >jekyll@ip-192-168-0-7:~$ 
 >```
+
 
 
