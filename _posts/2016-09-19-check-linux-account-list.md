@@ -1,5 +1,5 @@
 ---
-shed: true
+published: true
 title: How to check linux account lists
 layout: post
 author: jungwook
