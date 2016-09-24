@@ -24,7 +24,7 @@ tags:
 >
 >**Constraints**
 >
->+ 2 $\le$ n $\le$ $10^5$
+>+ <div>2 $\le$ n $\le$ $10^5$</div>
 >
 >+ 0 $\le$ k $\lt$ n
 >
