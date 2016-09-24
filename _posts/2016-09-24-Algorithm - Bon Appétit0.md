@@ -1,6 +1,3 @@
-{% if page.includeMathJax == true %}
-   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
-{% endif %}
 ---
 published: true
 title: Algorithm - Bon Appétit
@@ -11,6 +8,9 @@ tags:
 - Algorithm
 - Permutation
 ---
+{% if page.includeMathJax == true %}
+   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+{% endif %}
 
 [issue from https://www.hackerrank.com/challenges/bon-appetit](https://www.hackerrank.com/challenges/bon-appetit)
 
