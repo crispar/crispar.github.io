@@ -8,10 +8,6 @@ tags:
 - Algorithm
 - Permutation
 ---
-{% if page.includeMathJax == true %}
-   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
-{% endif %}
-
 [issue from https://www.hackerrank.com/challenges/bon-appetit](https://www.hackerrank.com/challenges/bon-appetit)
 
 >Anna and Brian order n items at a restaurant, but Anna declines to eat any of the ${k}^{th}$ item (where 0 $\le$ k $\lt$ n) ue to an allergy. When the check comes, they decide to split the cost of all the items they shared; however, Brian may have forgotten that they didn't split the $k^{th}$ item and accidentally charged Anna for it.
