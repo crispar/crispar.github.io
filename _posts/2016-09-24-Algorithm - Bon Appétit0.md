@@ -24,7 +24,10 @@ tags:
 >The third line contains an integer, b~charged~, denoting the amount of money that Brian charged Anna for her share of the bill.
 >
 >**Constraints**
+<<<<<<< HEAD
 >
+=======
+>>>>>>> 214b74d55895dd7ef0c6358e8f668a99e80654ec
 >+ 2 $\le$ n $\le$ $10^5$
 >
 >+ 0 $\le$ k $\lt$ n
