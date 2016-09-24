@@ -29,10 +29,11 @@ tags:
 ...
 
 [^1] c:/Users/윈도우계정/.atom/ 경로상에 `.apmrc`라는 파일을 하나 만들고, 아래 내용을 추가함.
->
+
+
 >```bash
 >http-proxy=http://xx.xx.xx.xx:xxxx/
 >http-proxy=http://xx.xx.xx.xx:xxxx/
 >```
->
+
 
