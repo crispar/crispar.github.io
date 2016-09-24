@@ -1,3 +1,6 @@
+{% if page.includeMathJax == true %}
+   <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+{% endif %}
 ---
 published: true
 title: Algorithm - Bon Appétit
