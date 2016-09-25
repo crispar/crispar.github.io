@@ -71,9 +71,39 @@ tags:
 >
 >Anna didn't eat item c[1] = 10, but she shared the rest of the items with Brian. The total cost of the shared items is 3 + 2 + 9 = 14 and, split in half, the cost per person is b<sub>actual</sub> = 7. Because this matches the amount,  b<sub>charged</sub> = 7 that Brian charged Anna for her portion of the bill, we print `Bon Appetit` on a new line.
 
+**Answer**
 
+```{.cpp}
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
 
-참고. [Project Nayuki](https://www.nayuki.io/page/next-lexicographical-permutation-algorithm)
+int main() {
+    int k=0, n=0;
+    int c[100000];
+    int total = 0, charged = 0;
+    int actual = 0;
 
+    int index = 0;
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    scanf("%d %d", &n, &k);
+    for(index = 0; index < n; index++) {
+      scanf("%d", &c[index]);
+      if (index != k) {
+        total += c[index];
+      }
+    }
+    scanf("%d", &charged);
+    actual = total / 2;
 
+    if (charged == actual) {
+      printf("Bon Appetit\n");
+    } else {
+      printf("%d", (charged - actual));
+    }
+    
+    return 0;
+}
 
+```
