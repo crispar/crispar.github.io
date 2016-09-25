@@ -18,22 +18,22 @@ tags:
 >
 > The first line contains two space-separated integers denoting the respective values of  (the number of items ordered) and k (the O-based index of the item that Anna did not eat). 
 >
->The second line contains n space-separated integers where each integer i denotes the cost, c[i] of item i (where 0 $\le$ i $\lt$ n).
+>The second line contains n space-separated integers where each integer i denotes the cost, c[i] of item i (where 0 $$\le$$ i $$\lt$$ n).
 >
->The third line contains an integer, b~charged~, denoting the amount of money that Brian charged Anna for her share of the bill.
+>The third line contains an integer, b<sub>charged</sub>, denoting the amount of money that Brian charged Anna for her share of the bill.
 >
 >**Constraints**
 >
->+ 2 $$\le$$ n $\le$ $10^5$</div>
+>+ 2 $$\le$$ n $$\le$$ $$10^5$$
 >
->+ 0 $\le$ k $\lt$ n
+>+ 0 $$\le$$ k $$\lt$$ n
 >
->+ 0 $\le$ c[i] $\le$ $10^4$
+>+ 0 $$\le$$ c[i] $$\le$$ $$10^4$$
 >
->+ 0 $\le$ b $\le$ $\sum c[i]$
+>+ 0 $$\le$$ b $$\le$$ $$\sum c[i]$$
 >
 >**Output**
->If Brian did not overcharge Anna, print `Bon Appetit` on a new line; otherwise, print the difference (i.e., b~charged~ - b~actual~ ) that Brian must refund to Anna (it is guaranteed that this will always be an integer).
+>If Brian did not overcharge Anna, print `Bon Appetit` on a new line; otherwise, print the difference (i.e., b<sub>charged</sub> - b<sub>actual</sub> ) that Brian must refund to Anna (it is guaranteed that this will always be an integer).
 >
 >**Sample Input 0**
 >
@@ -51,7 +51,7 @@ tags:
 >
 >**Explanation 0**
 >
->Anna didn't eat item c[1] = 10, but she shared the rest of the items with Brian. The total cost of the shared items is 3 + 2 + 9 = 14 and, split in half, the cost per person is b~actual~ = 7. Brian charged her b~charged~ = 12 or her portion of the bill, which is more than the 7 dollars worth of food that she actually shared with him. Thus, we print the amount Anna was overcharged, b~charged~ - b~actual~ = 12 - 7 = 5, on a new line.
+>Anna didn't eat item c[1] = 10, but she shared the rest of the items with Brian. The total cost of the shared items is 3 + 2 + 9 = 14 and, split in half, the cost per person is b<sub>actual</sub> = 7. Brian charged her b<sub>charged</sub> = 12 or her portion of the bill, which is more than the 7 dollars worth of food that she actually shared with him. Thus, we print the amount Anna was overcharged, b<sub>charged</sub> - b<sub>actual</sub> = 12 - 7 = 5, on a new line.
 >
 >**Sample Input 1**
 >
@@ -69,7 +69,7 @@ tags:
 >
 >**Explanation 0**
 >
->Anna didn't eat item c[1] = 10, but she shared the rest of the items with Brian. The total cost of the shared items is 3 + 2 + 9 = 14 and, split in half, the cost per person is b~actual~ = 7. Because this matches the amount,  b~charged~ = 7 that Brian charged Anna for her portion of the bill, we print `Bon Appetit` on a new line.
+>Anna didn't eat item c[1] = 10, but she shared the rest of the items with Brian. The total cost of the shared items is 3 + 2 + 9 = 14 and, split in half, the cost per person is b<sub>actual</sub> = 7. Because this matches the amount,  b<sub>charged</sub> = 7 that Brian charged Anna for her portion of the bill, we print `Bon Appetit` on a new line.
 
 
 
