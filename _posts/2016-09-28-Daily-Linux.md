@@ -166,8 +166,6 @@ To append data to files, the `-a` flag must be used:
 $ ps | tee -a fileone filetwo filethree
 ```
 
----
-
 <BR>
 
 [^1]: Explanation
