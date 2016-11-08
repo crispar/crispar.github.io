@@ -86,7 +86,7 @@ tags:
     export PS1='\u@\h\[${c_sgr0}\]:\W\[${c_sgr0}\] (\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\])\$ '
     ```
 
-  4. My .bashrc
+4. My .bashrc
 	<br>
     ```{.bash}
     if [ -f ~/.git-completion.bash ]; then
