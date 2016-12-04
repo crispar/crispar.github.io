@@ -1,15 +1,5 @@
 ---
 published: true
-title:
-layout: post
-author: jungwook
-category: meteor
-tag:
-- tag name
----
-
----
-published: true
 title: How to set git prompt in bash?
 layout: post
 author: jungwook
@@ -22,16 +12,16 @@ tags:
 [AutoComplete & Branch name](http://bit.ly/2fA0ZTV)
 [Branch Color](http://bit.ly/2fzZ55r)
 
-### bash prompt»óÀÇ git »ç¿ë tip
+### bash promptìƒì˜ git ì‚¬ìš© tip
 
 1. Autocomplete
 
-+ git-completion ÆÄÀÏÀ» ´Ù¿î.
+  + git-completion íŒŒì¼ì„ ë‹¤ìš´.
     ```{.bash}
     wget https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
     ```
 
-+ ~/.bashrc ÆÄÀÏ¿¡ ÇÏ±â ³»¿ë Ãß°¡.
+  + ~/.bashrc íŒŒì¼ì— í•˜ê¸° ë‚´ìš© ì¶”ê°€.
     ```{.bash}
     if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
@@ -40,19 +30,19 @@ tags:
 
 2. Branch name on Bash
 
-+ git-prompt.sh ÆÄÀÏÀ» ´Ù¿î.
+  + git-prompt.sh íŒŒì¼ì„ ë‹¤ìš´.
     ```{.bash}
     wget https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
     ```
 
-+ ~/.bashrc ÆÄÀÏ¿¡ ÇÏ±â ³»¿ë Ãß°¡.
+  + ~/.bashrc íŒŒì¼ì— í•˜ê¸° ë‚´ìš© ì¶”ê°€.
     ```{.bash}
     if [ -f ~/.git-prompt.bash ]; then
     . ~/.git-prompt.bash
     fi
     ```
 
-3. Branch Name ¼öÁ¤ À¯¹«¿¡ µû¸¥ »ö º¯°æ
+3. Branch Name ìˆ˜ì • ìœ ë¬´ì— ë”°ë¥¸ ìƒ‰ ë³€ê²½
     ```{.bash}
     n=`tput setaf 6`
     c_red=`tput setaf 1`
@@ -90,7 +80,7 @@ tags:
     export PS1='\u@\h\[${c_sgr0}\]:\W\[${c_sgr0}\] (\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\])\$ '
     ```
 
-  4. My .bashrc
+4. My .bashrc
     ```{.bash}
     if [ -f ~/.git-completion.bash ]; then
     . ~/.git-completion.bash
@@ -128,4 +118,3 @@ tags:
        PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\[$(branch_color)\]$(__git_ps1)\[${c_sgr0}\]\$ '
     fi
     ```
-
