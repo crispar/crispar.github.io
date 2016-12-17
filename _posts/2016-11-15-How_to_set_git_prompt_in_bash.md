@@ -118,3 +118,7 @@ tags:
        PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\[$(branch_color)\]$(__git_ps1)\[${c_sgr0}\]\$ '
     fi
     ```
+
+> 주의사항!
+>
+> wget으로 git-prompt.bash, git-completion.bash 두 파일을 받아오면 앞에 점이 없다. 따라서 wget 이후에 파일명에 .을 추가하거나 아니면 스크립트에서 해당 내용을 제거해야 한다. 할 때 잘하자!
