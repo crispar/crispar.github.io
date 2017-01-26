@@ -112,3 +112,14 @@ git commit -m "blog init"
 git push -u <repository name> master
 ```
 위와 같이 진행한 후에 github의 url인 (userid).github.com를 넣게 되면 해당 페이지가 나온다.
+
+>### 참고 : VM에서 jekyll 구동시 webpage를 찾을 수 없다고 나오는 경우
+>
+> vagrant로 구동 중인 상태에서 jekyll페이지를 열려고 시도하는 경우 page view가 정상적이지 않은 상황이 발생했다.
+>
+> 해당 케이스의 경우 명령어 실행을
+>```
+>$ jekyll serve --host 0.0.0.0
+>```
+>위와 같이 `--host 0.0.0.0`을 주니까 정상동작했다.
+>
