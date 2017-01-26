@@ -3,7 +3,7 @@ published: true
 title: use atom editor
 layout: post
 author: jungwook
-category: editor
+category: Tutorial
 tags:
 - Editor
 - Atom

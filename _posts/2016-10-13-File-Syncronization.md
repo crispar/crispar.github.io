@@ -3,7 +3,7 @@ published: true
 title: AWS ACHITECTURE FILE SYNCRONIZATION
 layout: post
 author: jungwook
-category: aws
+category: Cloud Infra
 tags:
 - aws
 - architecture

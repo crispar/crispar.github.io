@@ -3,7 +3,7 @@ published: true
 title: How to install Docker?
 layout: post
 author: jungwook
-category: docker
+category: Docker
 tag:
 - docker
 - container

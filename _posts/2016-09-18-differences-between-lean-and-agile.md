@@ -3,7 +3,7 @@ published: true
 title: Differences between Lean and Agile
 layout: post
 author: jungwook
-category: Agile
+category: Concept
 tags:
 - Agile
 - Lean

@@ -3,7 +3,7 @@ published: true
 title: How to install jekyll blog on github
 layout: post
 author: jungwook
-category: jekyll
+category: Tutorial
 tags:
 - jekyll
 ---

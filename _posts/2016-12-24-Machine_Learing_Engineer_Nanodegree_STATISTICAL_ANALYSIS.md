@@ -3,7 +3,7 @@ published: true
 title: Machine Learning - STATISTICAL ANALYSIS 01
 layout: post
 author: jungwook
-category: article
+category: Machine Learning
 tag:
 - machine learning
 - statistical ANALYSIS

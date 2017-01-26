@@ -1,146 +1,63 @@
 ### Site info:
 title: Jung`s Blog
-tagline: my private study record
-email: jwcris.park@gmail.com
-description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
-keywords: "Jekyll, theme, Freshman21"
+tagline: Record of private studies
+description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yulijia.net/freshman21" # the base hostname & protocol for your site
+url: http://crispar.github.io
+logo: '/public/logo.png'
 locale: en_US
-
-### Personal info and site tools info:
-twitter_username: "" 
-github_username: crispar
-favicon: "/images/favicon.ico"
-aboutme: Hi, this is jungwook. I made my blog based freshman21 theme to record my study. Thank you. # these are shown on aboutme-sidebar.
-aboutme_photo: https://crispar.github.io/images/20120901_100431.jpg# your photo.
-google_analytics_key: UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
-
-
-### Site setting:
-ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown where ShowContactInfo == True
-default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
-default_locale: "kr" # blog sidebar language set, only include: English (en), Chinese (cn), Japanese (jp), Polish (pl), Korean (kr) and Russian (ru) 
-
-locales:
-    en:
-      Aboutme: "About Me"
-      Archives: "Archives"
-      Blogroll: "Blogroll"
-      Categories: "Categories"
-      Copyright_Notice: "Copyright Notice"
-      Recent_Posts: "Recent Posts"
-      Tags: "Tags"
-      Previous: "Older"
-      Next: "Newer"
-      PostedInCategories: "Posted in"
-      Taggedwith: "and tagged"
-      PostDate: "on "
-      Google_search: "Site Search"
-      Home: "Home"
-      About: "About"
-      Guestbook: "Guestbook"
-      Subscribe: "Subscribe"
-    cn:
-      Aboutme: "关于我"
-      Archives: "存档"
-      Blogroll: "良师益友"        
-      Categories: "分类目录"    
-      Copyright_Notice: "版权声明"
-      Recent_Posts: "近期文章"
-      Tags: "标签" 
-      Previous: "前一页"
-      Next: "后一页"
-      PostedInCategories: "目录:"   
-      Taggedwith: "| 标签:"
-      PostDate: "| 发表时间: "
-      Google_search: "站内搜索"
-      Home: "首页"
-      About: "关于"
-      Guestbook: "留言"
-      Subscribe: "订阅"
-    jp:
-      Aboutme: "著者"
-      Archives: "アーカイブ"
-      Blogroll: "ブログロール"
-      Categories: "カテゴリー"
-      Copyright_Notice: "著作権表示"
-      Recent_Posts: "最近の投稿"
-      Tags: "タグ"
-      Previous: "前の記事"
-      Next: "次の記事"
-      PostedInCategories: "カテゴリー："
-      Taggedwith: "| タグ："
-      PostDate: "| 投稿日時: "
-      Google_search: "サイト内検索"
-      Home: "ホーム"
-      About: "このブログについて"
-      Guestbook: "メッセージ"
-      Subscribe: "購読"
-    pl:
-      Aboutme: "O mnie"
-      Archives: "Archiwum"
-      Blogroll: "Odnośniki"
-      Categories: "Kategorie"
-      Copyright_Notice: "Prawa autorskie"
-      Recent_Posts: "Najnowsze wpisy"
-      Tags: "Tagi"
-      Previous: "Starsze"
-      Next: "Nowsze"
-      PostedInCategories: "Kategoria"
-      Taggedwith: "tagi"
-      PostDate: "on "
-      Google_search: "Wyszukiwarka"
-      Home: "Strona główna"
-      About: "O mnie"
-      Guestbook: "Księga gości"
-      Subscribe: "Subskrypcja"
-    kr:
-      Aboutme: "저자 소개"
-      Archives: "모든 게시물"
-      Blogroll: "참조 링크"
-      Categories: "카테고리"
-      Copyright_Notice: "저작권"
-      Recent_Posts: "최근 게시물"
-      Tags: "태그"
-      Previous: "이전 게시물"
-      Next: "다음 게시물"
-      PostedInCategories: "카테고리: "
-      Taggedwith: "태그: "
-      PostDate: "작성일: "
-      Google_search: "게시물 검색"
-      Home: "홈"
-      About: "소개"
-      Guestbook: "방명록"
-      Subscribe: "구독하기"
-    ru:
-      Aboutme: "Обо мне" # = 'About me'
-      Archives: "Архив"
-      Blogroll: "Ссылки" # = 'Links'
-      Categories: "Разделы"
-      Copyright_Notice: "Авторские права"
-      Recent_Posts: "Свежие посты"
-      Tags: "Теги"
-      Previous: "Предыдущий пост"          # = 'Previous post'
-      Next: "Следующий пост"               # = 'Next post'
-      PostedInCategories: "Опубликовано в" # = 'Posted in'
-      Taggedwith: "с тегами"
-      PostDate: ""
-      Google_search: "Поиск на Google"
-      Home: "Домой"
-      About: "О блоге"            # = 'About blog'
-      Guestbook: "Гостевая книга"
-      Subscribe: "Подписаться"
-
-### your Blogroll info, only name can shown on the page.
-
-
-### Build settings
+# Site configurations
+gems:
+  - jekyll-paginate
 markdown: kramdown
-#highlighter: pygments
 kramdown:
-        input: GFM
-        syntax_highlighter: rouge
-gems: [jekyll-paginate]
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss    
 paginate: 5
-excerpt_separator: <!-- more -->
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: Codinfox
+  description: A passionate <strong>developer and researcher</strong>. I want to be a person who does not lose passion.
+  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
+  contact:
+    #linkedin:  https://www.linkedin.com/in/lizhihao
+    github:    https://github.com/crispar
+    # facebook:  <hide>
+    #twitter:   https://twitter.com/Li_Zhihao
+    #weibo:     http://weibo.com/41173780
+    email:     http://www.google.com/recaptcha/mailhide/d?k=01A3B2V-lI3SC7lsQNUnLWTA==&c=Z5DUOHh3cKJAPABgMk1R36XFtIhE2cK1BCjKg0tAqZc=
+
+# Navigation (2nd level links supported)
+nav:
+  Home:           
+    - '/'
+  Blog:           
+    - '/blog/'
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+  About:          
+    - '/about/'
+  Github Project: 
+    - 'https://github.com/crispar'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+homes:
+  image: /public/img/waterfall.jpg
+  caption: Like waterfall!
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: 'jungwook_park' # leave blank if you don't want disqus
+

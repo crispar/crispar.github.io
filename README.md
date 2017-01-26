@@ -1,69 +1,23 @@
-Freshman21
-==========
+# Codinfox-Lanyon
 
-Freshman21 is a Jekyll blog theme, base on theme [Freshman](http://github.com/yulijia/freshman). 
+This is a jekyll template based on [Lanyon](https://github.com/poole/lanyon). See a live demo [here](http://codinfox.github.io).
 
-A tribute to WordPress Theme Twenty-Twelve and Twenty-eleven.
+**If you like this project, PLEASE give it a star.**
 
-Enjoy.
+Lanyon is an unassuming [Jekyll](http://jekyllrb.com) theme that places content first by tucking away navigation in a hidden drawer. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
+All the configurations are inside either `_config.yml` or `_config.scss`. The options are fairly straightforward. 
 
-![Screen](http://i.imgur.com/oSp7kacl.png)
+The theme supports: 
 
-### Version 2.1 update 2016.06.06
-
-- master branch: the simplest template, original version with
-	* Open Graph META Tags
-	* Microdata(schema.org)
-
-- gh-pages branch: master branch with 
-
-	* [google analytics js template](https://github.com/yulijia/freshman21/blob/gh-pages/_includes/google_analytics.js)
-        * [BackToTop js script](https://github.com/yulijia/freshman21/tree/gh-pages/js)
-        * <q>readmore</q> module
-        * [keyboard shortcuts for pagination](http://yulijia.net/freshman21/news/2016/05/24/new-features.html)
-	* font awesome icon
-	* [Google search](https://github.com/yulijia/freshman21/blob/gh-pages/_includes/google_search.js)
-
-Clone master branch: 
-
-` git clone https://github.com/yulijia/freshman21.git -b master --single-branch`
-
-Clone gh-pages branch: 
-
-`git clone https://github.com/yulijia/freshman21.git -b gh-pages --single-branch`
+1. Theme colors: you can choose your favorite theme color
+2. Changable sidebar locations
+3. Integration of FontAwesome, MathJax, Disqus and Google Analytics
+4. and numerous improvements over original Lanyon
 
 
-### A Summary of Features
+## License
 
-- Provide single column and two columns layout
-- Powerful configure file
-- Comments by Disqus
-- Support LaTeX (by MathJax)
-- Syntax highlighting
-- Multiple Languages support 
-    * English
-    * Chinese
-    * Japanese (Contributed by [kokeiro](https://github.com/kokeiro001))
-    * Polish (Contributed by [Derson5](https://github.com/Derson5))
-    * Korean (Contributed by [ulgoon](https://github.com/ulgoon))
-    * Russian (Contributed by [alexeyev](https://github.com/alexeyev))
+Open sourced under the [MIT license](LICENSE.md).
 
-### How to install this theme?
-
-```
-# please make sure you have already installed git tools and ruby tools(gem)
-$ gem install sass
-$ gem install jekyll
-$ git clone https://github.com/yulijia/freshman21.git
-$ mv freshman21/ yourblogname.github.io/
-
-```
-
-### Demo
-
-Single column, please see [my own blog](http://yulijia.net/en/)
-
-Two columns, please see the [theme website](http://yulijia.net/freshman21/)
-
-
+<3

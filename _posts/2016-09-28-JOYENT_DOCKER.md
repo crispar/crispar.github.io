@@ -3,7 +3,7 @@ published: true
 title: JOYENT DOCKER CONTAINER
 layout: post
 author: jungwook
-category: Infra
+category: Cloud Infra
 tags:
 - joyent
 ---

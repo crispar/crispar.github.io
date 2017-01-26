@@ -3,7 +3,7 @@ published: true
 title: What is blockchain?
 layout: post
 author: jungwook
-category: tech
+category: Concept
 tags:
 - BlockChain
 ---

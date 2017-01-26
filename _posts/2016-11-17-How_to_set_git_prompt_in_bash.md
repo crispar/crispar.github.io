@@ -3,7 +3,7 @@ published: true
 title: How to set git prompt in bash?
 layout: post
 author: jungwook
-category: bash
+category: GIT
 tags:
 - bash
 - git

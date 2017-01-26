@@ -3,7 +3,7 @@ published: true
 title: Amazon doubles its public cloud lead, can anyone catch up?
 layout: post
 author: jungwook
-category: article
+category: Article
 tag:
 - amazon web service
 ---

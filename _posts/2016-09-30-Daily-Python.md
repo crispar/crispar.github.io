@@ -3,7 +3,7 @@ published: true
 title: Daily Python Study
 layout: post
 author: jungwook
-category: Language
+category: Python
 tags:
 - python
 ---
