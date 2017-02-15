@@ -11,6 +11,8 @@ tag:
 
 ---
 
+[원문](http://www.datasciencecentral.com/profiles/blogs/what-is-regression-analysis)
+
 Regression(회기 기법)은 틀림없이 통계에서 가장 많이 쓰이는 것이다. 그러나, 그 인기에도 불구하고, 가장 많은 오해가 있을 수 있습니다. 왜냐구요? 그 답변은 당신을 놀라게 할지도 모릅니다:
 
 거기에 Regression과 같은 것은 없습니다. 오히려 거기에는 회귀라는 통계 방법이나 근본적인 아이디어에 기초한 많은 통계 방법이 있습니다. 
@@ -20,315 +22,44 @@ Dependent Variable = Constant + Slope*Independent Variable + Error         |
 :-------------------------:|
 ![]({{ site.baseurl }}/images/regression_image_01.jpg)  |
 
-## 1. Bia
+"Dependent Variables"는 당신이 예상하거나 설명하기를 원하는 것입니다. 마케팅 리서치 컨텍스트 내에서 구매 관심도는 0-10사이에 측정된다. 
 
-+ Bias의 사전적 의미 : 편이, 선입견, 편견, 성향, 치우침
-+ Variance의 사전적 의미 : 변화, 편차 분산
-+ High Bias And Low Variable : 선입견이 크면, 줏대가 있고, 고집이 세기 때문에 새로운 경험을 해도 거기에 크게 휘둘리지 않는다. 평소 믿음과 다른 결과가 관찰되더라도 한 두 번 갖고는 쉽게 변경되지 않는다.
-+ Low Bias And High Variable : 선입견이 작으면, 사고가 유연하고, 귀가 얇기 때문에 개별 경험이나 관찰 결과에 크게 의존한다.
+"Independent Variables"는 Dependent Varialbe을 설명하거나 예상할 때 사용하는 것입니다. 소비자 설문 조사 예를 계속하면 0-10 척도를 사용한 사용 편의성과 같은 속성에 대한 평가 일 수 있습니다.
 
+위의 방정식에서 상수 항은 Y 절편만큼 당신과 더 친숙 할 수 있습니다. 규칙에 따라 Y는 Dependent Variable(종속 변수)로 사용되고, X는 independent Variable(독립 변수)로 사용된다. 기억이 나나요? 확실히 당신은 이것을 학교에서 배웠습니다. 당신은 아마도 X가 어떤 값에 의해 변하면, slope(기울기)는 Y의 값도 바꾼다는 것을 기억할 것이다.
 
+"Error"라는 용어는 많은 이유에서 매우 중요하다. 우리가 기억해야하는 한가지 것은 우리가 드물게 정확하게 X로 부터 Y를 예측할 수 있다는 것이다. 우리가 할 수 있을 때, X와 Y는 같을 지도 모른다고 가정하거나 우리에 데이터에 에러가 있다고 가정할 수 있다. 오류 패턴은 또한 우리 모델이 얼마나 신뢰할 수 있고 어떻게 개선 될지에 대한 팁입니다.
 
-## 2. Variance
+이것은 "Simple Regression"의 예이다. 우리가 한개 이상의 독립변수를 가지고 있다면, - 때때로 그것은 예측변수 혹은 공변수라고 불린다 - 이것이 "Multiple Regression"이 된다. "Multiple Regression"은 마케팅 리서치, 데이터 과학 그리고 대부분의 분야에서 "Simple Regression"보다 더 광범위하게 사용된다. 왜냐하면 한개의 독립 변수는 우리에게 그 이미지의 일부만 보여줄 수있기 때문이다.
 
-+ 
+이것과 관련하여, 많은 마케팅 연구가들은 "Regression"이 비선형 관계 혹은 상호 작용을 다룰 수 없다는 인상을 받은 것으로 보인다. 선형이라는 단어가 혼란스럽고, 종종 부정확하게 사용되는 동안에, 간략하게, 그 주장은 "Regression"이 단순히 X와 Y값들 사이의 직선 관계모델일수 있다는 주장과 같다. 이것은 완전히 무의미하고, 어떠한 입문자들을 위한 regression class는 다형 Regression을 다룬다. 많은 "Regression" 모델이 사실,변형이 이루어진 후에 단지 선형이다.
 
+상호 작용은 사실 복잡한 주제이지만, 본질적으로 중재 효과로 서술된다. 예를 들면, 나이와 구매력 사이의 관계는 성별과 관계가 있다. 성별은 나이와 구매력 사이의 관계를 줄여준다.이것은 상호관계의 아주 흔한 예이다. 다양한 이유에서, 모델러들은 단순한 모델을 더 좋아할지 모르지만, 거의 항상 옵션과 선택 사항들이 다양하다. 방정식의 오른쪽 부분 - 등호 오른쪽 부분 - 바로 잡기 위해 많은 노력이 필요할 수 있다.
 
-해당 강의에서 우리는 공통의 성능 메트릭의 일부를 살펴보고 그것들을 가지고 이전에 사용했던 타이타닉 데이티서 셋상에서 몇가지 알고리즘을 평가할 것이다.
+그래서 Regression은 결국 존재한다. 좋다, 내가 좀 성급했다. 근본적인 아이디어는 존재한다. 그러나 우리가 대답하려고 하는 질문과 우리가 가지고 있는 데이터의 유형에 따라 많은 Regression 유형이 있다. 심지어 기본적인 아이디어는 매우 간단하다. 우리의 에러가 최소화되는 방법으로 X-Y점들을 선으로 그린다. 그것이 복잡하고, 만약 누군가 Regression에 대해서 쓰여진 것이 100만 페이지라고 말했다면, 확실히 과소평가된 것이다.
 
-몇가지 명심해야할 것들이 있다.
+나는 이짧은 글에서 너무 깊이 있는 내용을 담을 수 없다. 나는 이미 단순 그리고 다차원 Regression을 언급했다. 몇몇은 통계강의나 마케팅 리서치 강의에서 `ANOVA` - 분산 분석법 - 를 기억할 것이다. 이것은 실제로 x변수가 숫자가 아닌 범주형의 변수인 Regression의 종류이다. 공분산 분석은 하나 이상의 범주 독립 변수와 섞인 숫자 (연속 또는 간격) 변수가 하나 이상있는 경우에 사용됩니다. 제가 의미하는 것을 명확히하기 위해 연령은 숫자 변수이고 연령대와 성별은 범주 형입니다. 대부분의 회귀선은 오른쪽에 두 가지 유형이 혼합되어 있습니다.
 
-+ 학습/테스트 분할을 사용하는 것에 따라 성능상에 큰 차이가 있다
-+ 일반적으로 모든 메트릭 상의 성능은 연관성이 있다. 그러나 몇가지 알고리즘은 결국 다른 상황에서 잘동작하거나 그렇지 않는다.
-+ 어떤 메트릭상의 시험적인 코딩은 정확히같아 보일 수 있다. 어려움은 선택에 따라 오는 것이지 구현방법에 따라 오지는 않는다.
+또 다른 중요한 차이점은 우리가 작업하는 종속 변수 유형입니다. 내 석사 논문의 주제는 대출 신청 데이터에서 학생 대출 기본값을 예측했습니다. 불이행의 정의는 대출 계약 및 다양한 법률 및 규정에 달려 있지만 결국 학생은 대출금을 상환하거나 상환하지 않습니다. 기본값은 숫자 형이 아닌 이분법 또는 2 진수 변수이므로 수치 종속 변수를 가정 한 회귀 양식을 사용하는 것이 좋지 않습니다. 프로 비트 역행은 옵션 이었지만 나는 로지스틱 회귀 (logistic regression)로 알려진 약간 새로운 방법을 사용하기로했다.
 
-## 2. Classification and Regression
+때때로 우리의 종속 변수는 범주 형이지만 두 가지 범주 이상을가집니다. 예를 들어 Choice Modeling (일명 "Conjoint")에서 응답자는 각 선택 작업에서 세 개 이상의 제품을 선택하고 Multinomial Logistic Regression이 사용됩니다. 그것은 다항 분포, 따라서 이름을 기반으로합니다. 때로는 Logit Model이라고도합니다. 혹시 궁금한 점이 있다면, 다항식 프로 비트 회귀 분석법이 있습니다. Probit 모델은 누적 정규 분포를 기반으로하며 거의 항상 로지스틱 회귀와 매우 유사한 결과를 제공합니다.
 
-+ `Classification`은 새로은 개체가 속하게되는 카테고리를 결정하는 것
-+ `Regression`은 우리가 예측할 수 있도록 해주는 연속된 데이터들의 집합.
+또한 중 / 소형 / 경량 사용자와 같이 범주가 정렬 된 범주 형 종속 변수가있을 수 있습니다. 마케팅 연구에서 가장 많이 사용되는 5, 7 점 척도는 기술적으로 말하면 서수 척도이며 Ordinal Logistic 또는 Probit Regression은 숫자 종속 변수를 가정하는 "표준"회귀 분석과는 다른 인터폴레이션을 제공하기도합니다.
 
-## 3. Classification metric
+포아송 및 네가티브 이항 회귀 분석은 종속 변수가 예를 들어 고객이 지난 해 제품이나 브랜드를 구매 한 횟수와 같은 경우에 설계된 두 가지 변형입니다. 다시 한번, 친숙한 회귀 분석을 사용하면 우리를 곤경에 빠뜨릴 수 있습니다. 데이터 마이닝 및 예측 분석에서 계수 데이터를 모델링하는 것이 점점 더 중요 해지고 있습니다.
 
-+ 데이터들이 어느 분류에 속하는지 지정되어 있는 메트릭
+나는 그 표면을 긁었다. (심지어!) 들어 본 적이없는 회귀 유형 외에도 시계열 데이터와 시간 데이터에 대한 회귀 분석뿐만 아니라 퀀텀 회귀, 상자 콕스 회귀, 절단 및 검열 회귀, 허들 회귀, 비모수 회귀 분석이 있습니다. 구조 방정식 모델링은 매우 큰 방식의 방법이며 어떤면에서는 회귀의 가장 일반적인 (다양한) 형태로 볼 수 있습니다. 또한 Mixture Modeling이 있으며 인공 신경망, Support Vector Machines 또는 회귀 분석 외에도 데이터 마이닝 및 예측 분석에 사용 된 여러 가지 방법에 대해서는 언급하지 않았지만 기계 학습에 대한 간략한 개요를 제공합니다.
 
-## 4. Accuracy
+당신은 어떻게 통계 101 이상으로 나아갈 수 있습니까? 온라인으로 많은 코스, 세미나 및 기타 자료가 있습니다. 나는 교과서를 아주 좋아하며 여기서 몇 가지를 언급 ​​할 것입니다. Jeff Simonoff의 범주 형 데이터 분석과 Alan Agresti의 범주 형 데이터 분석은 다음 단계로 나아갈 수있는 훌륭한 방법입니다. 프랭크 해럴 (Frank Harrell)의 회귀 모델링 전략은보다 진보적이지만 많은 통계학 전문가들에 의해 성경으로 간주됩니다. 내 논문을 위해 Harrell 교수의 Logistic Regression 프로그램을 사용했습니다.
 
-+ 모델이 요구하는 물음에 원하는 답을 줄 수 있는 확률
+적용된 로지스틱 회귀 (Hosmer and Lemeshow)와 모델링 백작 (Hilbe)은 일반화 된 선형 모델 및 확장 (Hardin 및 Hilbe)과 마찬가지로 널리 인용 된 두 권의 책입니다. Roger Koenker의 Quantile Regression은 그 방법의 권위있는 출처입니다. 나는 또한 작가의 마른 위트에 감사했다. Statistical Rethinking (McElreath)은 Bayesian 관점에서 많은 주제에 접근합니다.
 
-def cost(W, X, y):
-	s = 0
-	for i in range(len(X)):
-		s += (W*X[i] - y[i])**2
-	
-	return s/len(X)
+폴 호세 (Paul Jose)는 통계적 중재와 조절이라는 인과 관계 분석에 대해 아주 읽기 쉬운 입문서를 작성했습니다. Rex Kline의 탁월한 Principles and Practice of Structural Equation Modeling은 SEM을 시작하는 좋은 방법입니다. Time Series Analysis (Wei)는 TSA에 대한 훌륭한 소개이며 다중 레벨 및 세로 모델링 (Rabe-Hesketh and Skrondal)을 좋아했습니다.
 
-X = [1., 2., 3.]
-Y = [1., 2., 3.]
+내 회사 라이브러리에 다른 많은 소스를 나열했습니다.
 
-W_val, cost_val = [], []
-for i in range(-30, 51):
-	W = i*0.1
-	c = cost(W, X, Y)
+우리는 꽤 짧은 시간 동안 먼 길을왔다. 나의 아버지는 약리학과 독리학분야에서 일하셨고, ANOVA와 Probit Analysis는 그의 전공이었다. 나는 여전히 R.A.의 사본을 가지고있다. 연구원을위한 피셔의 통계 방법과 D. J. Finney의 내 도서관에서의 프로 비트 분석. 그가 컴퓨터 과학을 시작했을 때 초기 단계 였고 슬라이드 규칙, 기계 추가 기계 및 Barlow 's Tables에 의존해야했습니다. 아빠가 며칠 만에 할 수 있었던 일은 지금 몇 분 안에 할 수 있습니다. 많은 메모리가있는 빠른 컴퓨터 외에 많은 소프트웨어 패키지는 사용하기가 쉽습니다 ... 이는 또한 오용이 매우 쉽다는 것을 의미합니다.
 
-점들이 퍼져있는 형태에서 패턴을 찾아내고, 이 패턴을 활용해서 무언가를 예측하는 분석.
+"Regression"은 로켓 과학이 아니지만 인스턴트라면도 역시 아니다. 아닙니다. 그것을 현명하게 사용하면 크로스 탭과 대시 보드 아래에 무엇이 놓여 있는지를 당신에게 보여줄 것이다. 부주의하게 사용하면 엄청난 댓가를 지불 할 수 있다.
 
-## 2. Lenear Regression
-
-2차원 좌표에 분포된 데이터를 1차원 직선 방정식을 통해 표현되지 않는 데이터를 예측하기 위한 분석 모델.
-
-## 3. Hypothesis
-
-Linear Regression에서 사용하는 1차원 방정식을 가리키는 용어로, 우리말로 가설이라고 함. 수식에서 h(X) 혹은 H(X)로 표현함.
-
-H(x) = Wx + b 에서 Wx + b는 x에 대한 1차 방정식으로 직선을 표현. 기울기에 해당하는 W(Weight)와 절편에 해당하는 b(bias)가 반복되는 과정에서 계속 변경되고, 마지막 루프에서 바뀐 최종 값을 사용해서 데이터 예측을 하게됨. 최종적으로 나온 가설을 모델(model)이라고 부르고, "학습되었다"라고 함.
-
-## 4. Cost(비용)
-
-Hypothesis 방정식에 대한 비용(cost)으로 방정식의 결과가 크게 나오면 좋지 않다고 이야기하고, 루프를 돌 때마다 W와 b를 비용이 적게 발생하는 방향으로 수정.
-
-Linear Hypothesis          |  Which Hypothesis is better
-:-------------------------:|:-------------------------:
-![]({{ site.baseurl }}/images/lect_02_01.jpg)  |  ![]({{ site.baseurl }}/images/lect_02_02.jpg)
-
-왼쪽의 경우 데이터가 (1,1) (2,2) (3,3)인 경우로 최적의 Hypothesis 파랑색 선이 됨. 데이터 양이 많아질수록 모든 케이스를 만족하는 것은 어려우므로 Cost가 최소가 되는 선을 찾는 것이 학습의 목적
-
-Cost function          |  Cost function 
-:-------------------------:|:-------------------------:
-![]({{ site.baseurl }}/images/lect_02_03.jpg)  |  ![]({{ site.baseurl }}/images/lect_02_04.jpg)
-
-+ 결과적으로 각 값들의 분산 평균이 최소가 되는 것이 Cost가 최소가 되는 것임.
-+ 제곱을 하는 이유는 뺄샘을 하게 되면 짓선 위치에 따라 음수와 양수가 섞어나와 정상적인 차이를 구할 수 없음.
-+ 절대값도 있으나, 제곱이 가장 간단한 어떠한 케이스에도 양수가 됨.
-
-## 5. Linear Regression
-
-	import tensorflow as tf
-
-	x_data = [1, 2, 3]
-	y_data = [1, 2, 3]
-
-	# try to find values for w and b that compute y_data = W * x_data + b
-	W = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
-	b = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
-
-	# my hypothesis
-	hypothesis = W*x_data + b
-
-	# Simplified cost function
-	cost = tf.reduce_mean(tf.square(hypothesis - y_data))
-
-	# minimize
-	rate = tf.Variable(0.1)  # learning rate, alpha
-	optimizer = tf.train.GradientDescentOptimizer(rate)
-	train = optimizer.minimize(cost)
-
-	# before starting, initialize the variables. We will 'run' this first
-	init = tf.initialize_all_variables()
-
-	# launch the graph
-	sess = tf.Session()
-	sess.run(init)
-
-	# fit the line
-	for step in range(2001):
-		sess.run(train)
-		if step %20 == 0:
-			print('{:4} {} {} {}'.format(step, sess.run(cost), sess.run(W), sess.run(b)))
-
-	# learns best fit is W: [1] b:[0]
-
-## 6. placeholder
-
-	import tensorflow as tf
-
-	x_data = [1, 2, 3, 4]
-	y_data = [2, 4, 6, 8]
-
-	# try to find values for w and b that compute y_data = W * x_data + b
-	W = tf.Variable(tf.random_uniform([1], -100, 100))
-	b = tf.Variable(tf.random_uniform([1], -100, 100))
-
-	X = tf.placeholder(tf.float32)
-	Y = tf.placeholder(tf.float32)
-
-	# my hypothesis
-	hypothesis = W*X + b
-
-	# Simplified cost function
-	cost = tf.reduce_mean(tf.square(hypothesis - Y))
-
-	# minimize
-	rate = tf.Variable(0.1)  # learning rate, alpha
-	optimizer = tf.train.GradientDescentOptimizer(rate)
-	train = optimizer.minimize(cost)
-
-	# before starting, initialize the variables. We will 'run' this first
-	init = tf.initialize_all_variables()
-
-	# launch the graph
-	sess = tf.Session()
-	sess.run(init)
-
-	# fit the line
-	for step in range(2001):
-		sess.run(train, feed_dict={X:x_data, Y:y_data})
-		if step %20 == 0:
-			print(step, sess.run(cost, feed_dict={X:x_data, Y:y_data}), sess.run(W), sess.run(b))
-
-	print(sess.run(hypothesis, feed_dict={X:5}))
-	print(sess.run(hypothesis, feed_dict={X:2.5}))
-	print(sess.run(hypothesis, feed_dict={X: [2.5, 5]}))
-
-	# learns best fit is W: [1] b:[0]
-
-## 7. Linear Regression의 cost 최소화 알고리즘의 원리
-
-Hypothesis and Cost        |  Simplified hypothesis
-:-------------------------:|:-------------------------:
-![]({{ site.baseurl }}/images/lec_03_01.jpg)  |  ![]({{ site.baseurl }}/images/lec_03_02.jpg)
-
-왼쪽은 hypothesis와 cost 함수에 대한 공식이고, 오른쪽은 b(bsis)를 없앤 공식. b를 없애고, cost 함수에 H(x) 대신 Wx를 직접 입력.
-
-What cost(W) looks like?   |  How to minimize cost?
-:-------------------------:|:-------------------------:
-![]({{ site.baseurl }}/images/lec_03_03.jpg)  |  ![]({{ site.baseurl }}/images/lec_03_04.jpg)
-
-왼쪽은 단순 버젼의 공식으로 cost를 비용한 내용이고 오른쪽은 cost와 W값을 이용해 그래프를 그린 것.
-
-## 8. Gradient descent algorithm
-
-+ 경사를 따라 내려가는 알고리즘
-+ Minimize cost function에서 사용됨.
-+ 다양한 최저 계산에 사용
-+ Cost 함수에 대한 최소의 기울기(W)와 y 절편(b) 탐색
-+ 변수가 여러 개인 경우에도 적용이 가능함.
-
-## 9. Gradient descent algorithm 동작 원리
-
-+ 처음에는 추측값으로 시작 (0 일수도 있고 다른 값일 수도 있음)
-+ W와 b를 아주 조금씩 변경해가면서 비용을 최소화함.
-+ 인자가 변경될 때마다, cost가 줄어드는 방향의 기울기를 선택
-+ 이를 반복함.
-+ 최소 값을 갖을 때까지 계속 함.
-	+ 어디서 시작하든 결과적으로 최소값을 가져야함.
-
-Formal Definition  |  Formal Definition    |  Formal Definition
-:-------------------------:|:-------------------------:|:-------------------------:
-![]({{ site.baseurl }}/images/lec_03_07.jpg)  |  ![]({{ site.baseurl }}/images/lec_03_08.jpg)    |  ![]({{ site.baseurl }}/images/lec_03_09.jpg)
-
-Cost계산시에 기본적으로 아이템의 개수로 나누어 평균을 구하는데, 이 값을 평균 오차상 m과 2m의 경우 크게 차이가 없으므로 해당 값을 2m으로 한다. ( 나중에 미분 공식을 이용할 때 해당 값을 제거해버리기 위해서 그런 것으로 보임.)
-
-$$
-W := W - \alpha\dfrac{\partial}{\partial{W}}cost(W)
-$$
-
-위의 식의 경우 W = W - 변화량을 의미하며, 이 때 변화량의 값은 cost(W)를 W에 대해서 미분하여 기울기 변화를 찾아내는 방법이다. 결론적으로 cost function의 경우
-
-$$
-W := W - \alpha\dfrac{\partial}{\partial{W}}\dfrac{1}{2m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})^2
-$$
-
-공식을 풀어서 쓰면 결과적으로 위와 같이 되는데, cost부분을 미분하게 되면,
-
-$$
-W := W - \alpha\dfrac{1}{2m}\sum_{i=1}^m2(Wx^{(i)} - y^{(i)})x^{(i)}
-$$
-
-2로 나누게 되면 아래와 같은 공식으로 나오게 된다.
-
-$$
-W := W - \alpha\dfrac{1}{m}\sum_{i=1}^m(Wx^{(i)} - y^{(i)})x^{(i)}
-$$
-
-$\alpha$ 는 우리가 임의로 추가하는 상수로 미분에는 참가하지 않으나 $\alpha$가 너무 크면 오버슈팅(overshooting)이 될수 있고, 너무 작으면 최소 비용에 수렴할 때까지 너무 오래 걸리게 된다. 이 값은 여러번에 걸쳐 테스트하면서 결정해야 하는 중요한 값이지만, 역시 미분에는 참여하지 않는다.
-
-> 그나저나 미분 / 적분도 좀 공부해야 겠군;; 하나도 기억이 안나..
-
-## 10. Minimizing Cost
-
-하기 코드의 목정은 최소 비용을 찾는 것이 아니라 최소 비용을 포함하고 있는 W의 값까지 포함해서 일정 범위의 W에 대한 cost를 계산해서 Cost가 어떻게 변화하는지 보여주는 것이 목적
-   
-	import tensorflow as tf
-
-	X = [1., 2., 3.]
-	Y = [1., 2., 3.]
-
-	# 데이터의 개수
-	m = len(X)
-
-	# 기울기(W)를 바꾸면서 비용을 계산해서 보여주려는 것이 목적이므로 W를 placeholder로 처리
-	# 여기서는 y 절편에 해당하는 b는 생략하고 있음.
-	W = tf.placeholder(tf.float32)
-
-	hypothesis = tf.mul(W, X)
-	cost = tf.reduce_sum(tf.pow(hypothesis-Y,2))/m
-
-	init = tf.initialize_all_variables()
-
-	sess = tf.Session()
-	sess.run(init)
-
-	# 그래프로 표시하기 위해 데이터를 누적할 리스트
-	W_val, cost_val = [], []
-
-	# 0.1 단위로 증가할 수 없어서 -30부터 시작. 그래프에는 -3에서 5까지 표시됨.
-	for i in range(-30,51):
-		xPos = i*0.1
-		yPos = sess.run(cost, feed_dict={W:xPos})
-
-		print('{:3.1f}, {:3.1f}'.format(xPos,yPos))
-
-		# 그래프에 표시할 데이터 누적. 단순히 리스트에 갯수를 늘려나감
-		W_val.append(xPos)
-		cost_val.append(yPos)
-
-	sess.close()
-
-## 11. placeholder and custom gradient descent algorithm
-
-	import tensorflow as tf
-
-	x_data = [1., 2., 3., 4.]
-	y_data = [1., 3., 5., 7.]           # x와 y의 관계가 모호하다. cost가 내려가지 않는 것이 맞을 수도 있다.
-
-	# 동영상에 나온 데이터셋. 40번째 위치에서 best fit을 찾는다. 이번에는 사용하지 않음.
-	# x_data = [1., 2., 3.]
-	# y_data = [1., 2., 3.]
-
-	W = tf.Variable(tf.random_uniform([1], -10000., 10000.))        # tensor 객체 반환
-
-	X = tf.placeholder(tf.float32)      # 반복문에서 x_data, y_data로 치환됨
-	Y = tf.placeholder(tf.float32)
-
-	hypothesis = W * X
-	cost = tf.reduce_mean(tf.square(hypothesis - Y))
-
-	# 동영상에서 미분을 적용해서 구한 새로운 공식. cost를 계산하는 공식
-	mean    = tf.reduce_mean(tf.mul(tf.mul(W, X) - Y, X))   # 변경된 W가 mean에도 영향을 준다
-	descent = W - tf.mul(0.01, mean)
-	# W 업데이트. tf.assign(W, descent). 호출할 때마다 변경된 W의 값이 반영되기 때문에 업데이트된다.
-	update  = W.assign(descent)
-
-	init = tf.initialize_all_variables()
-
-	sess = tf.Session()
-	sess.run(init)
-
-	for step in range(50):
-		uResult = sess.run(update, feed_dict={X: x_data, Y: y_data})    # 이 코드를 호출하지 않으면 W가 바뀌지 않는다.
-		cResult = sess.run(cost, feed_dict={X: x_data, Y: y_data})      # update에서 바꾼 W가 영향을 주기 때문에 같은 값이 나온다.
-		wResult = sess.run(W)
-		mResult = sess.run(mean, feed_dict={X: x_data, Y: y_data})
-
-		# 결과가 오른쪽과 왼쪽 경사를 번갈아 이동하면서 내려온다. 기존에 한 쪽 경계만 타고 내려오는 것과 차이가 있다.
-		# 최종적으로 오른쪽과 왼쪽 경사의 중앙에서 최소 비용을 얻게 된다. (생성된 난수값에 따라 한쪽 경사만 타기도 한다.)
-		# descent 계산에서 0.1 대신 0.01을 사용하면 오른쪽 경사만 타고 내려오는 것을 확인할 수 있다. 결국 step이 너무 커서 발생한 현상
-		print('{} {} {} [{}, {}]'.format(step, mResult, cResult, wResult, uResult))
-
-	print('-'*50)
-	print('[] 안에 들어간 2개의 결과가 동일하다. 즉, update와 cost 계산값이 동일하다.')
-
-	print(sess.run(hypothesis, feed_dict={X: 5.0}))
-	print(sess.run(hypothesis, feed_dict={X: 2.5}))
-
-	sess.close()
+이것이 흥미있고 도움이 되었길 희망합니다.
